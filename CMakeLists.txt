@@ -51,6 +51,7 @@ add_action_files(
   Move.action
   ControlMode.action
   SetVelocity.action
+  dp.action
 )
 
 generate_messages(
