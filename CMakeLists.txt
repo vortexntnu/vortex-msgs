@@ -42,6 +42,7 @@ add_service_files(
     ThrustersWrite.srv
     SetPidGains.srv
     SetVelocity.srv
+    Waypoint.srv
 #   Service2.srv
 )
 
