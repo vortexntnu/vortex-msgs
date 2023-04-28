@@ -27,6 +27,8 @@ add_message_files(
   ObjectPosition.msg
   DpSetpoint.msg
   Torpedo_msgs.msg
+  DetectedObject.msg
+  DetectedObjectArray.msg
 )
 
 ## Generate services in the 'srv' folder
