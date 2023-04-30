@@ -29,6 +29,7 @@ add_message_files(
   Torpedo_msgs.msg
   DetectedObject.msg
   DetectedObjectArray.msg
+  GripperStatuses.msg
 )
 
 ## Generate services in the 'srv' folder
