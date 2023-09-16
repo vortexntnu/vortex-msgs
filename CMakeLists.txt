@@ -1,87 +1,57 @@
-cmake_minimum_required(VERSION 3.0)
-cmake_policy(SET CMP0048 NEW)
+cmake_minimum_required(VERSION 3.5)
 project(vortex_msgs)
 
-find_package(catkin REQUIRED COMPONENTS
-  message_generation
-  geometry_msgs
-  std_msgs
-  nav_msgs
-  actionlib
-  actionlib_msgs
+# Find ROS 2 packages
+find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+
+# Generate ROS 2 message interfaces
+rosidl_generate_interfaces(${PROJECT_NAME}
+  msg/ThrusterForces.msg
+  msg/LightInput.msg
+  msg/PropulsionCommand.msg
+  msg/EulerOrientations.msg
+  msg/GuidanceData.msg
+  msg/Debug.msg
+  msg/Pwm.msg
+  msg/RovState.msg
+  msg/ContainerID.msg
+  msg/Manipulator.msg
+  msg/CameraFeedSelection.msg
+  msg/CameraObjectInfo.msg
+  msg/ObjectPosition.msg
+  msg/DpSetpoint.msg
+  msg/Torpedo_msgs.msg
+  msg/DetectedObject.msg
+  msg/DetectedObjectArray.msg
+  msg/GripperStatuses.msg
+  msg/Centroid.msg
+  msg/CentroidArray.msg
+  msg/BBox.msg
+  msg/BBoxes.msg
+  msg/Point2.msg
+  msg/PointArray.msg
+  msg/OdometryArray.msg
+  srv/ControlMode.srv
+  srv/LandmarkPose.srv
+  srv/SetBatteryLevel.srv
+  srv/LaunchTorpedo.srv
+  srv/ThrusterArming.srv
+  srv/ThrustersWrite.srv
+  srv/SetPidGains.srv
+  srv/SetVelocity.srv
+  srv/Waypoint.srv
 )
 
-add_message_files(
-  DIRECTORY msg
-  FILES
-  ThrusterForces.msg
-  LightInput.msg
-  PropulsionCommand.msg
-  EulerOrientations.msg
-  GuidanceData.msg
-  Debug.msg
-  Pwm.msg
-  RovState.msg
-  ContainerID.msg
-  Manipulator.msg
-  CameraFeedSelection.msg
-  CameraObjectInfo.msg
-  ObjectPosition.msg
-  DpSetpoint.msg
-  Torpedo_msgs.msg
-  DetectedObject.msg
-  DetectedObjectArray.msg
-  GripperStatuses.msg
-  Centroid.msg
-  CentroidArray.msg
-  BBox.msg
-  BBoxes.msg
-  Point2.msg
-  PointArray.msg
-  OdometryArray.msg
-)
-
-## Generate services in the 'srv' folder
-add_service_files(
-   FILES
-    ControlMode.srv
-    LandmarkPose.srv
-    SetBatteryLevel.srv
-    LaunchTorpedo.srv
-    ThrusterArming.srv
-    ThrustersWrite.srv
-    SetPidGains.srv
-    SetVelocity.srv
-    Waypoint.srv
-)
-
-add_action_files(
-  FILES
-  MoveRelative.action
-  LosPathFollowing.action
-  VtfPathFollowing.action
-  Move.action
-  ControlMode.action
-  SetVelocity.action
-  dp.action
-)
-
-generate_messages(
-  DEPENDENCIES
-  geometry_msgs
-  std_msgs
-  actionlib_msgs
-  nav_msgs
-)
-
-catkin_package(
-  CATKIN_DEPENDS
-  message_runtime
+# Declare package dependencies
+ament_export_dependencies(
+  rosidl_default_runtime
   geometry_msgs
   std_msgs
   nav_msgs
 )
 
-include_directories(
-  ${catkin_INCLUDE_DIRS}
-)
+ament_package()
