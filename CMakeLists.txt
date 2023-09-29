@@ -23,6 +23,6 @@ ament_export_dependencies(
 
 ament_package()
 
-# Omg hello ^-^ 
-# Can we be friends, jk hihi X)))
+# Omg hello 😊
+# Can we be friends, jk lul hihi 🤭
 # Unless... 😳👉👈
