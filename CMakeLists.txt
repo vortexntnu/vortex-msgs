@@ -11,6 +11,7 @@ find_package(nav_msgs REQUIRED)
 # Generate ROS 2 message interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
     "msg/ThrusterForces.msg"
+    "msg/Pwm.msg"
  )
 
 # Declare package dependencies
