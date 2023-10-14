@@ -8,10 +8,14 @@ find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 
+set(msg_files
+  "msg/ThrusterForces.msg"
+  "msg/Pwm.msg"
+)
+
 # Generate ROS 2 message interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
-    "msg/ThrusterForces.msg"
-    "msg/Pwm.msg"
+    ${msg_files}
  )
 
 # Declare package dependencies
