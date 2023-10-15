@@ -11,6 +11,7 @@ find_package(nav_msgs REQUIRED)
 set(msg_files
   "msg/ThrusterForces.msg"
   "msg/Pwm.msg"
+  "msg/KMBinary.msg"
 )
 
 # Generate ROS 2 message interfaces
