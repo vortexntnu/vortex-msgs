@@ -7,11 +7,13 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(shape_msgs REQUIRED)
 
 set(msg_files
   "msg/ThrusterForces.msg"
   "msg/Pwm.msg"
   "msg/KMBinary.msg"
+  "msg/Landmark.msg"
 )
 
 # Generate ROS 2 message interfaces
@@ -25,6 +27,7 @@ ament_export_dependencies(
   geometry_msgs
   std_msgs
   nav_msgs
+  shape_msgs
 )
 
 ament_package()
