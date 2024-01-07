@@ -1,11 +1,19 @@
-std_msgs/Header 	header 	#For reference frame and timestamp of the landmark
-string 	namespace 	#For specifying the type of the landmark. (boat, buoy, etc)
-int32 	id 	#Specific item within namespace. (namespace + id should uniquely define the landmark)
-int32 	action 	#add/remove
+# Constants for action field
+uint8 ADD_ACTION = 1
+uint8 REMOVE_ACTION = 0
 
-#State 		Stuff to define where the object is
-int32 	type 	#enum for type of object (dynamic/moving or static)
-geometry_msgs/Pose 	pose 	#Position and orientation of the object
+# Constants for type field
+uint8 DYNAMIC_OBJECT = 1
+uint8 STATIC_OBJECT = 0
 
-#Extent 		Stuff to define the shape of something
-shape_msgs/SolidPrimitive 	shape 	#Shape of the object. (Prism/Sphere)
+std_msgs/Header header     # For reference frame and timestamp of the landmark
+string namespace           # For specifying the type of the landmark (boat, buoy, etc)
+int32 id                    # Specific item within namespace (namespace + id should uniquely define the landmark)
+uint8 action                # add/remove
+
+# State - Stuff to define where the object is
+uint8 type                  # enum for type of object (dynamic/moving or static)
+geometry_msgs/Pose pose    # Position and orientation of the object
+
+# Extent - Stuff to define the shape of something
+shape_msgs/SolidPrimitive shape    # Shape of the object (Prism/Sphere)

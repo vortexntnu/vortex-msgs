@@ -14,6 +14,7 @@ set(msg_files
   "msg/Pwm.msg"
   "msg/KMBinary.msg"
   "msg/Landmark.msg"
+  "msg/LandmarkArray.msg"
 )
 
 # Generate ROS 2 message interfaces
