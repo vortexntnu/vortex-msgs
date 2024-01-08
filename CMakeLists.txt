@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.5)
 project(vortex_msgs)
 
+# include_directories(
+#   ${CMAKE_CURRENT_SOURCE_DIR}/msg
+# )
+
 # Find ROS 2 packages
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
@@ -20,6 +24,10 @@ set(msg_files
 # Generate ROS 2 message interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
     ${msg_files}
+    DEPENDENCIES std_msgs
+      geometry_msgs
+      nav_msgs
+      shape_msgs
  )
 
 # Declare package dependencies
@@ -28,7 +36,7 @@ ament_export_dependencies(
   geometry_msgs
   std_msgs
   nav_msgs
-  shape_msgs
+  shape_msgs 
 )
 
 ament_package()

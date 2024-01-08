@@ -1,2 +1,2 @@
 # LandmarkArray.msg
-vortex_msgs/msg/Landmark[] landmarks
+vortex_msgs/Landmark[] landmarks
