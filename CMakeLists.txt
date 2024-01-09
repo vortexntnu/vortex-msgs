@@ -19,6 +19,7 @@ set(msg_files
   "msg/KMBinary.msg"
   "msg/Landmark.msg"
   "msg/LandmarkArray.msg"
+  "msg/OdometryArray.msg"
 )
 
 # Generate ROS 2 message interfaces

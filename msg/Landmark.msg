@@ -13,9 +13,8 @@ uint8 action                # add/remove
 
 # State - Stuff to define where the object is
 uint8 type                  # enum for type of object (dynamic/moving or static)
-geometry_msgs/Pose pose    # Position and orientation of the object
 
-geometry_msgs/TwistStamped twist  # Velocity of the object
+nav_msgs/Odometry odom      # Position and orientation of the object
 
 # Extent - Stuff to define the shape of something
 shape_msgs/SolidPrimitive shape    # Shape of the object (Prism/Sphere)
