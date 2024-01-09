@@ -1,2 +1,2 @@
 #array of posistions and velocity
-nav_msgs/Odometry[] odomArray
+nav_msgs/Odometry[] odoms
