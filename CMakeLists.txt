@@ -20,7 +20,6 @@ set(msg_files
   "msg/Landmark.msg"
   "msg/LandmarkArray.msg"
   "msg/OdometryArray.msg"
-  "msg/ActionFilterRequest.msg"
 )
 
 set(action_files
