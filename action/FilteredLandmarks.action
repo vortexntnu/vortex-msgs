@@ -1,12 +1,9 @@
-uint8 SUCCESS = 0
-uint8 BAD_REQUEST = 1
-uint8 CONNECTION_ERROR = 2
 float32 IGNORE_DISTANCE =0.0
+uint8 PROCESSING_NEW_GOAL =1
 
 # Define the action request
 string[] landmark_types
 float32  distance
-string  frame_id
 
 ---
 # Define the action result
