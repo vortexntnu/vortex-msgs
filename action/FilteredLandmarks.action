@@ -1,5 +1,7 @@
 float32 IGNORE_DISTANCE =0.0
 uint8 PROCESSING_NEW_GOAL =1
+uint8 GOAL_CANCELLED =2
+uint8 CONNECTION_ERROR =3
 
 # Define the action request
 string[] landmark_types
