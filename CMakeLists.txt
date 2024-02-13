@@ -12,6 +12,9 @@ set(msg_files
   "msg/ThrusterForces.msg"
   "msg/Pwm.msg"
   "msg/KMBinary.msg"
+  "msg/Point2DWithCov.msg"
+  "msg/State2DWithCov.msg"
+  "msg/VisualizationData.msg"
 )
 
 # Generate ROS 2 message interfaces
