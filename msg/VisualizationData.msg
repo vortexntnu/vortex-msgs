@@ -1,7 +1,7 @@
 # VisualizationData.msg
 
 # final prediction
-State2DWithCov x_final
+PosVel2DWithCovariance x_final
 
 # existence probability of the target (only if IPDA is used)
 float64 existence_probability
@@ -10,7 +10,7 @@ float64 existence_probability
 geometry_msgs/Point[] inside
 
 # predicted state based on dynamic and sensor model
-State2dWithCov x_prediction
+PosVel2DWithCovariance x_prediction
 
 # predicted state based on dynamic model
-State2DWithCov z_prediction
+Position2DWithCovariance z_prediction

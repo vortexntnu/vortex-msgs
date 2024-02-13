@@ -5,7 +5,5 @@
 float64 x
 float64 y
 
-# Row-major representation of the 2x2 covariance matrix
-# the paramters are:
-# (x, y)
+# 2x2 covariance matrix
 float64[4] covariance
