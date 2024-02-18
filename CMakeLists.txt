@@ -14,9 +14,19 @@ set(msg_files
   "msg/KMBinary.msg"
 )
 
+set(srv_files
+  "srv/Waypoint.srv"
+)
+
+set(action_files
+  "action/LosPathFollowing.action"
+)
+
 # Generate ROS 2 message interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
     ${msg_files}
+    ${srv_files}
+    ${action_files}
  )
 
 # Declare package dependencies
