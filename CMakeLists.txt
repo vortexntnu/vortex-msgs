@@ -20,6 +20,7 @@ set(msg_files
   "msg/Position2DWithCovariance.msg"
   "msg/PosVel2DWithCovariance.msg"
   "msg/VisualizationData.msg"
+  "msg/VisualizationDataArray.msg"
   "msg/Landmark.msg"
   "msg/LandmarkArray.msg"
   "msg/OdometryArray.msg"
