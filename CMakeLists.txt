@@ -25,9 +25,14 @@ set(msg_files
   "msg/OdometryArray.msg"
 )
 
+set(action_files
+  "action/FilteredLandmarks.action"
+)
+
 # Generate ROS 2 message interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
     ${msg_files}
+    ${action_files}
     DEPENDENCIES std_msgs
       geometry_msgs
       nav_msgs
