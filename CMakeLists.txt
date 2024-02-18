@@ -1,12 +1,17 @@
 cmake_minimum_required(VERSION 3.5)
 project(vortex_msgs)
 
+# include_directories(
+#   ${CMAKE_CURRENT_SOURCE_DIR}/msg
+# )
+
 # Find ROS 2 packages
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(shape_msgs REQUIRED)
 
 set(msg_files
   "msg/ThrusterForces.msg"
@@ -15,11 +20,18 @@ set(msg_files
   "msg/Position2DWithCov.msg"
   "msg/PosVel2DWithCov.msg"
   "msg/VisualizationData.msg"
+  "msg/Landmark.msg"
+  "msg/LandmarkArray.msg"
+  "msg/OdometryArray.msg"
 )
 
 # Generate ROS 2 message interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
     ${msg_files}
+    DEPENDENCIES std_msgs
+      geometry_msgs
+      nav_msgs
+      shape_msgs
  )
 
 # Declare package dependencies
@@ -28,6 +40,7 @@ ament_export_dependencies(
   geometry_msgs
   std_msgs
   nav_msgs
+  shape_msgs 
 )
 
 ament_package()
