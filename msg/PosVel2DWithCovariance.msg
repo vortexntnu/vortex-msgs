@@ -9,4 +9,4 @@ float64 v_x
 float64 v_y
 
 # 4x4 covariance matrix
-float[16] covariance
+float64[16] covariance
