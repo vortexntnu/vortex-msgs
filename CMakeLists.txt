@@ -27,6 +27,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     ${msg_files}
     ${srv_files}
     ${action_files}
+    DEPENDENCIES std_msgs
+      geometry_msgs
+      nav_msgs
  )
 
 # Declare package dependencies
