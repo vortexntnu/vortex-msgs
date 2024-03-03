@@ -24,6 +24,8 @@ set(msg_files
   "msg/Landmark.msg"
   "msg/LandmarkArray.msg"
   "msg/OdometryArray.msg"
+  "msg/Parameter.msg"
+  "msg/ParameterArray.msg"
 )
 
 set(action_files
