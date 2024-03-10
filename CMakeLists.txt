@@ -15,9 +15,15 @@ set(msg_files
   "msg/HybridpathReference.msg"
 )
 
+set(srv_files
+  "srv/MissionPlanner.srv"
+  "srv/Waypoint.srv"
+)
+
 # Generate ROS 2 message interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
     ${msg_files}
+    ${srv_files}
     DEPENDENCIES std_msgs
       geometry_msgs
  )
