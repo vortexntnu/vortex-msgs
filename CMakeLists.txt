@@ -26,6 +26,7 @@ set(msg_files
   "msg/OdometryArray.msg"
   "msg/Parameter.msg"
   "msg/ParameterArray.msg"
+  "msg/HybridpathReference.msg"
 )
 
 set(action_files
