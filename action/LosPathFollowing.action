@@ -1,0 +1,11 @@
+#goal definition
+geometry_msgs/Point next_waypoint
+float32 desired_depth
+float32 forward_speed
+float32 sphere_of_acceptance
+---
+#result definition
+bool terminal_sector
+---
+#feedback
+float32 distance_to_goal
