@@ -1,0 +1,10 @@
+#request
+int32[] ox
+int32[] oy
+int32 sx
+int32 sy
+int32 gx
+int32 gy
+---
+#response
+bool success

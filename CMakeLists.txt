@@ -17,6 +17,7 @@ set(msg_files
   "msg/ThrusterForces.msg"
   "msg/Pwm.msg"
   "msg/KMBinary.msg"
+  "msg/HybridpathReference.msg"
   "msg/Landmark.msg"
   "msg/LandmarkArray.msg"
   "msg/OdometryArray.msg"
@@ -24,6 +25,11 @@ set(msg_files
 
 set(action_files
   "action/FilteredLandmarks.action"
+)
+
+set(srv_files
+  "srv/MissionPlanner.srv"
+  "srv/Waypoint.srv"
 )
 
 # Generate ROS 2 message interfaces
