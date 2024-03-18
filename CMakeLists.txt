@@ -26,6 +26,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     ${srv_files}
     DEPENDENCIES std_msgs
       geometry_msgs
+      nav_2d_msgs
  )
 
 # Declare package dependencies
@@ -34,6 +35,7 @@ ament_export_dependencies(
   geometry_msgs
   std_msgs
   nav_msgs
+  nav_2d_msgs
 )
 
 ament_package()

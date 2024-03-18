@@ -1,0 +1,8 @@
+#request
+int32[] obstacles_x
+int32[] obstacles_y
+nav_2d_msgs/Point2D start
+nav_2d_msgs/Point2D goal
+---
+#response
+bool success
