@@ -1,5 +1,5 @@
 #request
-float32[] waypoint
+geometry_msgs/Point[] waypoint
 ---
 #response
 bool success
