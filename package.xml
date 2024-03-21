@@ -15,7 +15,9 @@
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>nav_msgs</depend>
-  
+  <depend>shape_msgs</depend>
+  <depend>action_msgs</depend>
+
   <export>
     <build_type>ament_cmake</build_type>
     <rosidl_package_selection file="${ament_cmake_export_rosidl_package_selection}" />
