@@ -1,10 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 project(vortex_msgs)
 
-# include_directories(
-#   ${CMAKE_CURRENT_SOURCE_DIR}/msg
-# )
-
 # Find ROS 2 packages
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
@@ -17,10 +13,6 @@ set(msg_files
   "msg/ThrusterForces.msg"
   "msg/Pwm.msg"
   "msg/KMBinary.msg"
-  "msg/Position2DWithCovariance.msg"
-  "msg/PosVel2DWithCovariance.msg"
-  "msg/VisualizationData.msg"
-  "msg/VisualizationDataArray.msg"
   "msg/Landmark.msg"
   "msg/LandmarkArray.msg"
   "msg/OdometryArray.msg"
