@@ -1,12 +1,8 @@
 # Message for Hybrid reference path signal.
 
-float64 w_ref
-float64 v_ref
-float64 v_ref_t
-float64 v_ref_s
-
-geometry_msgs/Pose2D eta
-geometry_msgs/Pose2D nu
-geometry_msgs/Pose2D eta_d
-geometry_msgs/Pose2D eta_d_s
-geometry_msgs/Pose2D eta_d_ss
+float64 w # w = s_dot - v_s
+float64 v_s # Desired speed assignment
+float64 v_ss # Derivative of desired speed assignment
+geometry_msgs/Pose2D eta_d # Desired position
+geometry_msgs/Pose2D eta_d_s # Derivative of desired position
+geometry_msgs/Pose2D eta_d_ss # Second derivative of desired position

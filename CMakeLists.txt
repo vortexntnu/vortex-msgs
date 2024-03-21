@@ -21,6 +21,11 @@ set(msg_files
   "msg/HybridpathReference.msg"
 )
 
+set(srv_files
+  "srv/MissionParameters.srv"
+  "srv/Waypoint.srv"
+)
+
 set(action_files
   "action/FilteredLandmarks.action"
 )
@@ -28,12 +33,13 @@ set(action_files
 # Generate ROS 2 message interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
     ${msg_files}
+    ${srv_files}
     ${action_files}
     DEPENDENCIES std_msgs
       geometry_msgs
       nav_msgs
       shape_msgs
- )
+)
 
 # Declare package dependencies
 ament_export_dependencies(
