@@ -1,2 +1,0 @@
-# VisualizationDataArray.msg
-vortex_msgs/VisualizationData[] visualization_data
