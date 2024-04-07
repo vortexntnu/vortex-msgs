@@ -19,6 +19,7 @@ set(msg_files
   "msg/Parameter.msg"
   "msg/ParameterArray.msg"
   "msg/HybridpathReference.msg"
+  "msg/GuidanceData.msg"
 )
 
 set(srv_files
