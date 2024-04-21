@@ -22,3 +22,5 @@ float64 z_d
 float64 v
 float64 t
 float64 speed
+
+bool is_colav
