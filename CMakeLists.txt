@@ -25,6 +25,7 @@ set(msg_files
 set(srv_files
   "srv/MissionParameters.srv"
   "srv/Waypoint.srv"
+  "srv/DesiredVelocity.srv"
 )
 
 set(action_files
