@@ -8,8 +8,10 @@ find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(shape_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 set(msg_files
+  "msg/Clusters.msg"
   "msg/ThrusterForces.msg"
   "msg/Pwm.msg"
   "msg/KMBinary.msg"
@@ -39,7 +41,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
       geometry_msgs
       nav_msgs
       shape_msgs
-)
+      sensor_msgs
+ )
 
 # Declare package dependencies
 ament_export_dependencies(
@@ -47,7 +50,8 @@ ament_export_dependencies(
   geometry_msgs
   std_msgs
   nav_msgs
-  shape_msgs 
+  shape_msgs
+  sensor_msgs 
 )
 
 ament_package()
