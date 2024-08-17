@@ -28,6 +28,7 @@ set(srv_files
   "srv/MissionParameters.srv"
   "srv/Waypoint.srv"
   "srv/DesiredVelocity.srv"
+  "srv/DesiredHeading.srv"
 )
 
 set(action_files
