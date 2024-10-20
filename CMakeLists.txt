@@ -30,6 +30,8 @@ set(srv_files
 
 set(action_files
   "action/FilteredLandmarks.action"
+  "action/FindDock.action"
+  "action/GoToWaypoint.action"
 )
 
 # Generate ROS 2 message interfaces

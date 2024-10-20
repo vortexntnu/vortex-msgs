@@ -1,0 +1,8 @@
+# Goal
+bool start_search
+---
+# Result
+bool dock_found
+---
+# Feedback
+float32 time_elapsed
