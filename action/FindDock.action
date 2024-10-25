@@ -2,7 +2,7 @@
 bool start_search
 ---
 # Result
-bool dock_found
+geometry_msgs/PoseStamped dock_pose
 ---
 # Feedback
 float32 time_elapsed

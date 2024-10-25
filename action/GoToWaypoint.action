@@ -1,8 +1,8 @@
 # Goal
-bool go_to_waypoint
+geometry_msgs/PoseStamped waypoint
 ---
 # Result
 bool success
 ---
 # Feedback
-float32 distance_to_waypoint
+geometry_msgs/PoseStamped current_pose
