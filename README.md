@@ -1,7 +1,7 @@
 # vortex_msgs
 
 
-[![Build Status](http://build.vortexntnu.no/job/vortex_msgs/badge/icon)](http://build.vortexntnu.no/job/vortex_msgs/)
+[![Source Build](https://github.com/vortexntnu/vortex-msgs/actions/workflows/source-build.yaml/badge.svg)](https://github.com/vortexntnu/vortex-msgs/actions/workflows/source-build.yaml)
 
 This ROS package contains all custom ROS message types used in all workspaces
 
