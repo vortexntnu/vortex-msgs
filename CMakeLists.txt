@@ -21,6 +21,7 @@ set(msg_files
   "msg/Parameter.msg"
   "msg/ParameterArray.msg"
   "msg/HybridpathReference.msg"
+  "msg/LOSGuidance.msg"
 )
 
 set(srv_files
@@ -30,9 +31,13 @@ set(srv_files
 
 set(action_files
   "action/FilteredLandmarks.action"
+<<<<<<< Updated upstream
   "action/FindDock.action"
   "action/GoToWaypoint.action"
   "action/LocateDock.action"
+=======
+  "action/NavigateWaypoints.action"
+>>>>>>> Stashed changes
 )
 
 # Generate ROS 2 message interfaces
