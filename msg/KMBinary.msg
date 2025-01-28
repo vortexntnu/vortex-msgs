@@ -38,4 +38,3 @@ float32 down_acceleration
 uint32 delayed_heave_utc_seconds
 uint32 delayed_heave_utc_nanoseconds
 float32 delayed_heave
-

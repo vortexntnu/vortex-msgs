@@ -46,4 +46,3 @@ Include the messages in your source code, i.e.
 ```cpp
 #include <vortex_msgs/ThrusterForces.h>
 ```
-

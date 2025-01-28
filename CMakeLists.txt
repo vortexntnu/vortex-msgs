@@ -59,7 +59,7 @@ ament_export_dependencies(
   std_msgs
   nav_msgs
   shape_msgs
-  sensor_msgs 
+  sensor_msgs
 )
 
 ament_package()
