@@ -1,7 +1,8 @@
 # vortex_msgs
 
 
-[![Source Build](https://github.com/vortexntnu/vortex-msgs/actions/workflows/source-build.yaml/badge.svg)](https://github.com/vortexntnu/vortex-msgs/actions/workflows/source-build.yaml)
+[![Industrial CI](https://github.com/vortexntnu/vortex-msgs/actions/workflows/industrial-ci.yml/badge.svg)](https://github.com/vortexntnu/vortex-msgs/actions/workflows/industrial-ci.yml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/vortexntnu/vortex-msgs/main.svg)](https://results.pre-commit.ci/latest/github/vortexntnu/vortex-msgs/main)
 
 This ROS package contains all custom ROS message types used in all workspaces
 
@@ -46,4 +47,3 @@ Include the messages in your source code, i.e.
 ```cpp
 #include <vortex_msgs/ThrusterForces.h>
 ```
-
