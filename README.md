@@ -4,46 +4,76 @@
 [![Industrial CI](https://github.com/vortexntnu/vortex-msgs/actions/workflows/industrial-ci.yml/badge.svg)](https://github.com/vortexntnu/vortex-msgs/actions/workflows/industrial-ci.yml)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/vortexntnu/vortex-msgs/main.svg)](https://results.pre-commit.ci/latest/github/vortexntnu/vortex-msgs/main)
 
-This ROS package contains all custom ROS message types used in all workspaces
+This ROS package contains all custom ROS 2 interfaces used in all workspaces
 
-### Before you add a new custom message: are you _really_ sure you need one?
-First have a look in the [common_msgs](http://wiki.ros.org/common_msgs?distro=kinetic) package to find out if any of the message types included in ROS works for you.
+### Before you add a new custom interface: are you _really_ sure you need one?
+First have a look in the [common_interfaces](https://github.com/ros2/common_interfaces) repository to find out if any of the message and service types included in ROS 2 works for you.
 
 ### Adding a new message type
-Create a new message description file in [msg](msg)
+Create a new message description file in [msg](msg).
 
-Add the message in the list of messages in the CMakeLists.txt file in this repo
-```txt
-## Generate messages in the 'msg' folder
-add_message_files(
-   FILES
-   ThrusterForces.msg
+Add the message in the list of messages in the [CMakeLists.txt](CMakeLists.txt) file.
+```cmake
+set(msg_files
+   ... # other messages
+   "msg/YourNewMessage.msg"
+)
+```
+
+For services and actions it is the same way. Service definitions are added to [srv](srv), and to the `CMakeLists.txt` like
+```cmake
+set(srv_files
+   ... # other services
+   "srv/YourNewService.srv"
+)
+```
+
+Action definitions are added to [action](action), and to the `CMakeLists.txt` like
+```cmake
+set(action_files
+   ... # other actions
+   "action/YourNewAction.action"
 )
 ```
 
 ### Using the messages in your package
-In your `package.xml`, add these dependencies
+In your `package.xml`, add this dependency
 ```xml
-<build_depend>vortex_msgs</build_depend>
-<run_depend>vortex_msgs</run_depend>
+<depend>vortex_msgs</depend>
 ```
 Add it to your `CMakeLists.txt`
-```txt
-find_package(catkin REQUIRED COMPONENTS roscpp vortex_msgs)
+```cmake
+find_package(vortex_msgs REQUIRED)
 ```
-```txt
-catkin_package(
-    INCLUDE_DIRS
-    LIBRARIES
-    CATKIN_DEPENDS roscpp vortex_msgs
-    DEPENDS
+If your package includes C++ code which depend on vortex_msgs you also need to add the following to the `CMakeLists.txt`
+```cmake
+ament_taget_dependencies(<your_executable>
+    ... # other dependencies
+    vortex_msgs
 )
 ```
-```txt
-add_dependencies(<your executable> vortex_msgs_generate_messages_cpp)
+
+### Include the interfaces in your code
+For C++
+```cpp
+// message
+#include <vortex_msgs/msg/your_new_message.hpp>
+
+// service
+#include <vortex_msgs/srv/your_new_service.hpp>
+
+// action
+#include <vortex_msgs/action/your_new_action.hpp>
 ```
 
-Include the messages in your source code, i.e.
-```cpp
-#include <vortex_msgs/ThrusterForces.h>
+For Python
+```python
+# message
+from vortex_msgs.msg import YourNewMessage
+
+# service
+from vortex_msgs.srv import YourNewService
+
+# action
+from vortex_msgs.action import YourNewAction
 ```
