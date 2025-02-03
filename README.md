@@ -9,10 +9,10 @@ This ROS package contains all custom ROS 2 interfaces used in all workspaces
 ### Before you add a new custom interface: are you _really_ sure you need one?
 First have a look in the [common_interfaces](https://github.com/ros2/common_interfaces) repository to find out if any of the message and service types included in ROS 2 works for you.
 
-### Adding a new message type
-Create a new message description file in [msg](msg).
+### Adding a new custom interface
+New message definitions are added to [msg](msg).
 
-Add the message in the list of messages in the [CMakeLists.txt](CMakeLists.txt) file.
+Add the new message in the [CMakeLists.txt](CMakeLists.txt) file.
 ```cmake
 set(msg_files
    ... # other messages
@@ -20,7 +20,7 @@ set(msg_files
 )
 ```
 
-For services and actions it is the same way. Service definitions are added to [srv](srv), and to the `CMakeLists.txt` like
+For services and actions it is the same way. Service definitions are added to [srv](srv), and to the [CMakeLists.txt](CMakeLists.txt) like
 ```cmake
 set(srv_files
    ... # other services
@@ -28,7 +28,7 @@ set(srv_files
 )
 ```
 
-Action definitions are added to [action](action), and to the `CMakeLists.txt` like
+Action definitions are added to [action](action), and to the [CMakeLists.txt](CMakeLists.txt) like
 ```cmake
 set(action_files
    ... # other actions
