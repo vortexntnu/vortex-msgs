@@ -24,6 +24,7 @@ set(msg_files
   "msg/LOSGuidance.msg"
   "msg/ReferenceFilter.msg"
   "msg/DVLDepth.msg"
+  "msg/Waypoints.msg"
 )
 
 set(srv_files
@@ -38,6 +39,7 @@ set(action_files
   "action/LocateDock.action"
   "action/NavigateWaypoints.action"
   "action/ReferenceFilterWaypoint.action"
+  "action/VtfGuidance.action"
 )
 
 # Generate ROS 2 message interfaces
