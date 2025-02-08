@@ -39,7 +39,11 @@ set(action_files
   "action/LocateDock.action"
   "action/NavigateWaypoints.action"
   "action/ReferenceFilterWaypoint.action"
+<<<<<<< Updated upstream
   "action/VtfGuidance.action"
+=======
+  "action/FilteredPose.action"
+>>>>>>> Stashed changes
 )
 
 # Generate ROS 2 message interfaces
