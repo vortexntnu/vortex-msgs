@@ -40,6 +40,7 @@ set(action_files
   "action/NavigateWaypoints.action"
   "action/ReferenceFilterWaypoint.action"
   "action/VtfGuidance.action"
+  "action/LOSGuidance.action"
 )
 
 # Generate ROS 2 message interfaces
