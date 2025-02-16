@@ -23,7 +23,7 @@ set(msg_files
   "msg/HybridpathReference.msg"
   "msg/LOSGuidance.msg"
   "msg/ReferenceFilter.msg"
-  "msg/DVLDepth.msg"
+  "msg/DVLAltitude.msg"
   "msg/Waypoints.msg"
 )
 
@@ -39,11 +39,9 @@ set(action_files
   "action/LocateDock.action"
   "action/NavigateWaypoints.action"
   "action/ReferenceFilterWaypoint.action"
-<<<<<<< Updated upstream
   "action/VtfGuidance.action"
-=======
+  "action/LOSGuidance.action"
   "action/FilteredPose.action"
->>>>>>> Stashed changes
 )
 
 # Generate ROS 2 message interfaces

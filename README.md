@@ -47,7 +47,7 @@ find_package(vortex_msgs REQUIRED)
 ```
 If your package includes C++ code which depend on vortex_msgs you also need to add the following to the `CMakeLists.txt`
 ```cmake
-ament_taget_dependencies(<your_executable>
+ament_target_dependencies(<your_executable>
     ... # other dependencies
     vortex_msgs
 )
