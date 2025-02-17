@@ -1,5 +1,5 @@
 # Goal
-geometry_msgs/PointStamped[] waypoints
+vortex_msgs/Waypoints waypoints
 
 ---
 # Result
