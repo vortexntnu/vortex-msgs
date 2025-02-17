@@ -1,0 +1,10 @@
+# Goal
+geometry_msgs/PointStamped[] waypoints
+
+---
+# Result
+bool success
+
+---
+# Feedback
+vortex_msgs/HybridpathReference feedback
