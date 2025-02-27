@@ -1,3 +1,2 @@
-# Array of points
-
+std_msgs/Header header
 geometry_msgs/Point[] waypoints

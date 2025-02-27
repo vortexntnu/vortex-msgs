@@ -42,6 +42,7 @@ set(action_files
   "action/VtfGuidance.action"
   "action/LOSGuidance.action"
   "action/FilteredPose.action"
+  "action/HybridpathGuidance.action"
 )
 
 # Generate ROS 2 message interfaces
