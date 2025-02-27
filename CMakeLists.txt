@@ -41,6 +41,7 @@ set(action_files
   "action/ReferenceFilterWaypoint.action"
   "action/VtfGuidance.action"
   "action/LOSGuidance.action"
+  "action/FilteredPose.action"
   "action/HybridpathGuidance.action"
 )
 
