@@ -34,7 +34,7 @@ repos:
       - id: fix-byte-order-marker
   # Spellcheck in comments and docs
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.3.0
+    rev: v2.4.1
     hooks:
       - id: codespell
         args: ['--write-changes', '--ignore-words-list=theses,fom,NED']
