@@ -1,13 +1,13 @@
 # Goal
-geometry_msgs/PoseStamped[] waypoints  # Array of waypoints to visit
-string target_server                   # Name of the target action server
-float64 switching_threshold           # Distance threshold for switching waypoints
+geometry_msgs/PoseStamped[] waypoints 
+string target_server                  
+float64 switching_threshold          
 ---
 # Result
 bool success
-uint32 completed_waypoints            # Number of waypoints completed
+uint32 completed_waypoints           
 ---
 # Feedback
-geometry_msgs/Pose current_pose       # Current pose of the vehicle
-uint32 current_waypoint_index         # Index of the current waypoint
-float64 distance_to_waypoint          # Distance to the current waypoint
+geometry_msgs/Pose current_pose      
+uint32 current_waypoint_index        
+float64 distance_to_waypoint          
