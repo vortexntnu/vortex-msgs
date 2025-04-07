@@ -38,6 +38,8 @@ set(action_files
   "action/LocateDock.action"
   "action/NavigateWaypoints.action"
   "action/ReferenceFilterWaypoint.action"
+  "action/LOSGuidance.action"
+  "action/WaypointManager.action"
 )
 
 # Generate ROS 2 message interfaces

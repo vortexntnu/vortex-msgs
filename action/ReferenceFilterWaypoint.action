@@ -3,6 +3,7 @@ geometry_msgs/PoseStamped goal
 ---
 # Result
 bool success
+vortex_msgs/ReferenceFilter result
 ---
 # Feedback
 vortex_msgs/ReferenceFilter feedback
