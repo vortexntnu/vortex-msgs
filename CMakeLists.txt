@@ -43,6 +43,7 @@ set(action_files
   "action/LOSGuidance.action"
   "action/FilteredPose.action"
   "action/HybridpathGuidance.action"
+  "action/WaypointManager.action"
 )
 
 # Generate ROS 2 message interfaces
