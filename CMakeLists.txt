@@ -25,6 +25,8 @@ set(msg_files
   "msg/ReferenceFilter.msg"
   "msg/DVLAltitude.msg"
   "msg/Waypoints.msg"
+  "msg/Transducer.msg"
+  "msg/TransducerArray.msg"
 )
 
 set(srv_files
