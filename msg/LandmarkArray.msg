@@ -1,2 +1,7 @@
 # LandmarkArray.msg
-vortex_msgs/Landmark[] landmarks
+# Container for multiple Landmark detections.
+
+std_msgs/Header header
+
+# List of Landmark detections.
+Landmark[] landmarks
