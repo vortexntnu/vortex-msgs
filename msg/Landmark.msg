@@ -1,29 +1,19 @@
-# Constants for action field
-uint8 REMOVE_ACTION = 0
-uint8 ADD_ACTION    = 1
-uint8 UPDATE_ACTION = 2
+# Landmark.msg
+# A unified detection format for perception outputs.
 
-# Constants for landmark_type field
-uint8 NONE = 0
-uint8 BUOY   = 1
-uint8 BOAT   = 2
-uint8 WALL  = 69
+std_msgs/Header header
 
- # Constants for classification field
-uint8 UNKNOWN = 0
-uint8 RED_BUOY   = 1
-uint8 GREEN_BUOY = 2
-uint8 NORTH_MARK = 3
-uint8 SOUTH_MARK = 4
-uint8 EAST_MARK  = 5
-uint8 WEST_MARK  = 6
-uint8 MOVING_BOAT = 7
-uint8 STATIC_BOAT = 8
+# Landmark type: RAY or POSE
+uint8 RAY=0
+uint8 POSE=1
+uint8 type
 
+# Detector confidence in this landmark [0.0, 1.0]
+float32 confidence
 
-uint8 landmark_type 0      # For specifying the type of the landmark (boat, buoy, etc)
-uint32 id                 # Specific item id within type (type + id should uniquely define the landmark)
-uint8 action 1            # Action to be taken on the landmark (remove, add, update)
-uint8 classification 0     # Classification of the landmark (e.g. red, green, moving, static, etc)
-nav_msgs/Odometry odom     # Position and orientation of the object, also includes reference frame and timestamp
-shape_msgs/SolidPrimitive shape # Shape of the object
+# Landmark identifier
+uint8 id
+
+# For POSE: position = xyz, orientation = quaternion
+# For RAY: position = direction vector (unit length), orientation = identity (0,0,0,1)
+geometry_msgs/Pose pose
