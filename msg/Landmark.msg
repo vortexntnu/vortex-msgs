@@ -1,19 +1,19 @@
 # Landmark.msg
-# A unified detection format for perception outputs.
 
 std_msgs/Header header
 
-# Landmark type: RAY or POSE
-uint8 RAY=0
-uint8 POSE=1
-uint8 type
+uint16 type
+uint16 subtype
 
-# Detector confidence in this landmark [0.0, 1.0]
-float32 confidence
+geometry_msgs/PoseWithCovariance pose
 
-# Landmark identifier
-uint8 id
+# Constants
 
-# For POSE: position = xyz, orientation = quaternion
-# For RAY: position = direction vector (unit length), orientation = identity (0,0,0,1)
-geometry_msgs/Pose pose
+# Landmark type:
+uint16 ARUCO_BOARD = 1
+uint16 PIPELINE_START = 2
+uint16 PIPELINE_END = 3
+
+# Landmark subtype:
+uint16 ARUCO_BOARD_CAMERA = 1
+uint16 ARUCO_BOARD_SONAR = 2
