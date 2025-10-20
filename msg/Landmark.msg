@@ -10,9 +10,10 @@ geometry_msgs/PoseWithCovariance pose
 # Constants
 
 # Landmark type:
-uint16 ARUCO_BOARD = 1
-uint16 PIPELINE_START = 2
-uint16 PIPELINE_END = 3
+uint16 ARUCO_MARKER = 1
+uint16 ARUCO_BOARD = 2
+uint16 PIPELINE_START = 3
+uint16 PIPELINE_END = 4
 
 # Landmark subtype:
 uint16 ARUCO_BOARD_CAMERA = 1
