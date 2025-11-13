@@ -1,8 +1,8 @@
-std_msgs/msg/Header header
+std_msgs/Header header
 uint32 height
 uint32 width
-double meters_per_pixel_x
-double meters_per_pixel_y
-double max_range
-double min_range
-double vertical_fov
+float64 meters_per_pixel_x
+float64 meters_per_pixel_y
+float64 max_range
+float64 min_range
+float64 vertical_fov
