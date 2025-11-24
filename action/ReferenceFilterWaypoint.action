@@ -1,5 +1,5 @@
 # Goal
-vortex_msgs/Waypoint[] waypoints
+vortex_msgs/Waypoint waypoint
 ---
 # Result
 bool success
