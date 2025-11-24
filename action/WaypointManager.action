@@ -1,9 +1,9 @@
 # Goal
-geometry_msgs/PoseStamped[] waypoints
-string target_server
+vortex_msgs/Waypoint[] waypoints
 float64 switching_threshold
 ---
 # Result
+geometry_msgs/Pose final_pose
 bool success
 uint32 completed_waypoints
 ---
