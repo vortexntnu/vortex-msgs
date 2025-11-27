@@ -32,6 +32,7 @@ set(msg_files
 set(srv_files
   "srv/MissionParameters.srv"
   "srv/Waypoint.srv"
+  "srv/SetLosMode.srv"
 )
 
 set(action_files

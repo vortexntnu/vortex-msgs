@@ -1,0 +1,5 @@
+#request
+int8 mode # 0=PROPORTIONAL, 1=INTEGRAL, 2=ADAPTIVE
+---
+#response
+bool success
