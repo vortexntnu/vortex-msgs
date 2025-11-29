@@ -1,13 +1,13 @@
 # Goal
 vortex_msgs/Waypoint[] waypoints
-float64 switching_threshold
+float64 convergence_threshold
+bool persistent # Action is not terminated when waypoints are reached. Can only be stopped through cancellation from client.
 ---
 # Result
 geometry_msgs/Pose final_pose
+bool pose_valid
 bool success
-uint32 completed_waypoints
 ---
 # Feedback
 geometry_msgs/Pose current_pose
-uint32 current_waypoint_index
-float64 distance_to_waypoint
+vortex_msgs/Waypoint current_waypoint
