@@ -1,0 +1,8 @@
+#request
+vortex_msgs/Waypoint[] waypoints
+float64 switching_threshold
+bool overwrite # Deletes all prior waypoints in queue.
+bool non_interruptible # If true, rejects all new interruptible waypoints while executing.
+---
+#response
+bool success

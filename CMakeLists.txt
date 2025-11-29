@@ -32,7 +32,7 @@ set(msg_files
 
 set(srv_files
   "srv/MissionParameters.srv"
-  "srv/Waypoint.srv"
+  "srv/WaypointAddition.srv"
 )
 
 set(action_files
