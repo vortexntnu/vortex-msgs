@@ -1,6 +1,0 @@
-#request
-vortex_msgs/Waypoint[] waypoints
-float64 switching_threshold
----
-#response
-bool success
