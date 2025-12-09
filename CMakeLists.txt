@@ -24,6 +24,7 @@ set(msg_files
   "msg/LOSGuidance.msg"
   "msg/ReferenceFilter.msg"
   "msg/DVLAltitude.msg"
+  "msg/Waypoint.msg"
   "msg/Waypoints.msg"
   "msg/Transducer.msg"
   "msg/TransducerArray.msg"
@@ -31,7 +32,7 @@ set(msg_files
 
 set(srv_files
   "srv/MissionParameters.srv"
-  "srv/Waypoint.srv"
+  "srv/SendWaypoints.srv"
 )
 
 set(action_files

@@ -1,0 +1,8 @@
+#request
+vortex_msgs/Waypoint[] waypoints
+float64 switching_threshold
+bool overwrite_prior_waypoints # Deletes all prior waypoints in queue.
+bool take_priority # If true, rejects all new non-priority service calls while executing.
+---
+#response
+bool success
