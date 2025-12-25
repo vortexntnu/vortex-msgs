@@ -28,6 +28,7 @@ set(msg_files
   "msg/Waypoints.msg"
   "msg/Transducer.msg"
   "msg/TransducerArray.msg"
+  "msg/PoseEulerStamped.msg"
 )
 
 set(srv_files
