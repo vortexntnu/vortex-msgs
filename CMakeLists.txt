@@ -29,6 +29,7 @@ set(msg_files
   "msg/Transducer.msg"
   "msg/TransducerArray.msg"
   "msg/PoseEulerStamped.msg"
+  "msg/SonarInfo.msg"
 )
 
 set(srv_files
