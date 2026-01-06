@@ -29,6 +29,8 @@ set(msg_files
   "msg/Transducer.msg"
   "msg/TransducerArray.msg"
   "msg/PoseEulerStamped.msg"
+  "msg/Line2D.msg"
+  "msg/Line2DArray.msg"
   "msg/SonarInfo.msg"
 )
 
