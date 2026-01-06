@@ -31,6 +31,7 @@ set(msg_files
   "msg/PoseEulerStamped.msg"
   "msg/Line2D.msg"
   "msg/Line2DArray.msg"
+  "msg/SonarInfo.msg"
 )
 
 set(srv_files
