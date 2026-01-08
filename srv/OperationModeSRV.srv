@@ -1,0 +1,13 @@
+#request
+uint8 mode
+bool absolute
+
+uint8 KILLSWITCH = 0
+uint8 AUTONOMOUS = 1
+uint8 MANUAL = 2
+
+---
+#response
+uint8 mode
+bool killswitch_status 
+

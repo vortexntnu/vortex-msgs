@@ -27,11 +27,13 @@ set(msg_files
   "msg/Waypoints.msg"
   "msg/Transducer.msg"
   "msg/TransducerArray.msg"
+  "msg/OperationMode.msg"
 )
 
 set(srv_files
   "srv/MissionParameters.srv"
   "srv/Waypoint.srv"
+  "srv/OperationModeSRV.srv"
 )
 
 set(action_files
@@ -75,3 +77,6 @@ ament_package()
 # Omg hello 😊
 # Can we be friends, jk lul hihi 🤭
 # Unless... 😳👉👈
+
+# Okie :3
+# Friendship accepted!1!!
