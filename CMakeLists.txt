@@ -24,15 +24,20 @@ set(msg_files
   "msg/LOSGuidance.msg"
   "msg/ReferenceFilter.msg"
   "msg/DVLAltitude.msg"
+  "msg/Waypoint.msg"
   "msg/Waypoints.msg"
   "msg/Transducer.msg"
   "msg/TransducerArray.msg"
+  "msg/PoseEulerStamped.msg"
+  "msg/Line2D.msg"
+  "msg/Line2DArray.msg"
+  "msg/SonarInfo.msg"
   "msg/OperationMode.msg"
 )
 
 set(srv_files
   "srv/MissionParameters.srv"
-  "srv/Waypoint.srv"
+  "srv/SendWaypoints.srv"
   "srv/OperationModeSRV.srv"
 )
 
