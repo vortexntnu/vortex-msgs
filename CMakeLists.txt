@@ -39,7 +39,7 @@ set(srv_files
   "srv/MissionParameters.srv"
   "srv/SendWaypoints.srv"
   "srv/OperationModeSRV.srv"
-  "srv/SetKillswitchSRV.srv"
+  "srv/SetKillswitch.srv"
   "srv/ToggleKillswitch.srv"
 )
 
