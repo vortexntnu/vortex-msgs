@@ -1,0 +1,7 @@
+#request
+bool killswitch_on
+
+---
+#response
+uint8 mode
+bool killswitch_status

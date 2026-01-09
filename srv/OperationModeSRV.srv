@@ -1,10 +1,7 @@
 #request
 uint8 mode
-bool absolute
 
-uint8 KILLSWITCH = 0
-uint8 AUTONOMOUS = 1
-uint8 MANUAL = 2
+vortex_msgs/OperationMode[] modes
 
 ---
 #response
