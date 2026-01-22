@@ -1,5 +1,5 @@
 # Enum operation mode
-uint8 mode
+uint8 operation_mode
 
 # Operation mode
 uint8 AUTONOMOUS = 1

@@ -38,7 +38,7 @@ set(msg_files
 set(srv_files
   "srv/MissionParameters.srv"
   "srv/SendWaypoints.srv"
-  "srv/OperationModeSRV.srv"
+  "srv/RequestOperationMode.srv"
   "srv/SetKillswitch.srv"
   "srv/ToggleKillswitch.srv"
 )

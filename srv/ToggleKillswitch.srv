@@ -1,5 +1,5 @@
 #request
 ---
 #response
-uint8 mode
+uint8 operation_mode
 bool killswitch_status
