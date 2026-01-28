@@ -35,11 +35,15 @@ set(msg_files
   "msg/LineSegment3D.msg"
   "msg/LineSegment3DArray.msg"
   "msg/SonarInfo.msg"
+  "msg/OperationMode.msg"
 )
 
 set(srv_files
   "srv/MissionParameters.srv"
   "srv/SendWaypoints.srv"
+  "srv/SetOperationMode.srv"
+  "srv/SetKillswitch.srv"
+  "srv/ToggleKillswitch.srv"
 )
 
 set(action_files
@@ -83,3 +87,6 @@ ament_package()
 # Omg hello 😊
 # Can we be friends, jk lul hihi 🤭
 # Unless... 😳👉👈
+
+# Okie :3
+# Friendship accepted!1!!
