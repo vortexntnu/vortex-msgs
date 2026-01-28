@@ -1,5 +1,6 @@
 #request
 ---
 #response
-vortex_msgs/OperationMode operation_mode
+vortex_msgs/OperationMode current_operation_mode
 bool killswitch_status
+bool success
