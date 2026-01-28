@@ -1,8 +1,0 @@
-#request
-uint8 operation_mode
-
----
-#response
-uint8 operation_mode
-bool killswitch_status 
-

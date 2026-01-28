@@ -1,0 +1,8 @@
+#request
+vortex_msgs/OperationMode operation_mode
+
+---
+#response
+vortex_msgs/OperationMode operation_mode
+bool killswitch_status 
+
