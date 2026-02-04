@@ -24,14 +24,26 @@ set(msg_files
   "msg/LOSGuidance.msg"
   "msg/ReferenceFilter.msg"
   "msg/DVLAltitude.msg"
+  "msg/Waypoint.msg"
   "msg/Waypoints.msg"
   "msg/Transducer.msg"
   "msg/TransducerArray.msg"
+  "msg/PoseEulerStamped.msg"
+  "msg/Point2D.msg"
+  "msg/LineSegment2D.msg"
+  "msg/LineSegment2DArray.msg"
+  "msg/LineSegment3D.msg"
+  "msg/LineSegment3DArray.msg"
+  "msg/SonarInfo.msg"
+  "msg/OperationMode.msg"
 )
 
 set(srv_files
   "srv/MissionParameters.srv"
-  "srv/Waypoint.srv"
+  "srv/SendWaypoints.srv"
+  "srv/SetOperationMode.srv"
+  "srv/SetKillswitch.srv"
+  "srv/ToggleKillswitch.srv"
   "srv/SetLosMode.srv"
 )
 
@@ -76,3 +88,6 @@ ament_package()
 # Omg hello 😊
 # Can we be friends, jk lul hihi 🤭
 # Unless... 😳👉👈
+
+# Okie :3
+# Friendship accepted!1!!

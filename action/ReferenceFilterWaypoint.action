@@ -1,8 +1,9 @@
 # Goal
-geometry_msgs/PoseStamped goal
+vortex_msgs/Waypoint waypoint
+float64 convergence_threshold
 ---
 # Result
 bool success
 ---
 # Feedback
-vortex_msgs/ReferenceFilter feedback
+vortex_msgs/ReferenceFilter reference
