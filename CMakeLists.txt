@@ -16,6 +16,7 @@ set(msg_files
   "msg/Pwm.msg"
   "msg/KMBinary.msg"
   "msg/Landmark.msg"
+  "msg/LandmarkTypeClass.msg"
   "msg/LandmarkArray.msg"
   "msg/OdometryArray.msg"
   "msg/Parameter.msg"
@@ -58,6 +59,8 @@ set(action_files
   "action/FilteredPose.action"
   "action/HybridpathGuidance.action"
   "action/WaypointManager.action"
+  "action/LandmarkPolling.action"
+  "action/LandmarkConvergence.action"
 )
 
 # Generate ROS 2 message interfaces

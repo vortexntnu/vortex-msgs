@@ -1,0 +1,7 @@
+# Goal
+vortex_msgs/LandmarkTypeClass identifier
+---
+# Result
+vortex_msgs/Landmark[] landmark
+---
+# Feedback
