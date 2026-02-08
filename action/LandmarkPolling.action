@@ -2,6 +2,6 @@
 vortex_msgs/LandmarkTypeClass identifier
 ---
 # Result
-vortex_msgs/Landmark[] landmark
+vortex_msgs/LandmarkArray landmarks
 ---
 # Feedback
