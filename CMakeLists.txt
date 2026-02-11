@@ -22,6 +22,7 @@ set(msg_files
   "msg/ParameterArray.msg"
   "msg/HybridpathReference.msg"
   "msg/LOSGuidance.msg"
+  "msg/GripperReferenceFilter.msg" 
   "msg/ReferenceFilter.msg"
   "msg/DVLAltitude.msg"
   "msg/Waypoint.msg"
