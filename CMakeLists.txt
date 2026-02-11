@@ -25,6 +25,7 @@ set(msg_files
   "msg/GripperReferenceFilter.msg" 
   "msg/ReferenceFilter.msg"
   "msg/DVLAltitude.msg"
+  "msg/GripperWaypoint.msg"
   "msg/Waypoint.msg"
   "msg/Waypoints.msg"
   "msg/Transducer.msg"

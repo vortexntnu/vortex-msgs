@@ -1,9 +1,9 @@
 # Goal
-geometry_msgs/PoseStamped goal
-
-# Feedback
-
-vortex_msgs/GripperReferenceFilter feedback
+vortex_msgs/GripperWaypoint waypoint
+float64 convergence_threshold
 
 # Result
-vortex_msgs/GripperReferenceFilter result
+bool success
+
+# Feedback
+vortex_msgs/GripperReferenceFilter reference
