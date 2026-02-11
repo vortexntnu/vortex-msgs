@@ -54,6 +54,7 @@ set(action_files
   "action/LocateDock.action"
   "action/NavigateWaypoints.action"
   "action/ReferenceFilterWaypoint.action"
+  "action/GripperReferenceFilterWaypoint.action"
   "action/VtfGuidance.action"
   "action/LOSGuidance.action"
   "action/FilteredPose.action"
