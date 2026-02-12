@@ -41,6 +41,7 @@ set(srv_files
   "srv/SetOperationMode.srv"
   "srv/SetKillswitch.srv"
   "srv/ToggleKillswitch.srv"
+  "srv/GetOperationMode.srv"
 )
 
 set(action_files
