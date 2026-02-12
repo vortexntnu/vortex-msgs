@@ -44,10 +44,7 @@ set(srv_files
   "srv/SetOperationMode.srv"
   "srv/SetKillswitch.srv"
   "srv/ToggleKillswitch.srv"
-<<<<<<< HEAD
   "srv/GetOperationMode.srv"
-=======
->>>>>>> origin/main
 )
 
 set(action_files
@@ -93,8 +90,4 @@ ament_package()
 # Unless... 😳👉👈
 
 # Okie :3
-<<<<<<< HEAD
 # Friendship accepted!1!!
-=======
-# Friendship accepted!1!!
->>>>>>> origin/main
