@@ -2,4 +2,4 @@
 
 std_msgs/Header header
 
-Line2D[] lines
+LineSegment2D[] lines

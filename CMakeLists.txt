@@ -29,8 +29,11 @@ set(msg_files
   "msg/Transducer.msg"
   "msg/TransducerArray.msg"
   "msg/PoseEulerStamped.msg"
-  "msg/Line2D.msg"
-  "msg/Line2DArray.msg"
+  "msg/Point2D.msg"
+  "msg/LineSegment2D.msg"
+  "msg/LineSegment2DArray.msg"
+  "msg/LineSegment3D.msg"
+  "msg/LineSegment3DArray.msg"
   "msg/SonarInfo.msg"
   "msg/OperationMode.msg"
 )
@@ -41,7 +44,10 @@ set(srv_files
   "srv/SetOperationMode.srv"
   "srv/SetKillswitch.srv"
   "srv/ToggleKillswitch.srv"
+<<<<<<< HEAD
   "srv/GetOperationMode.srv"
+=======
+>>>>>>> origin/main
 )
 
 set(action_files
@@ -87,4 +93,8 @@ ament_package()
 # Unless... 😳👉👈
 
 # Okie :3
+<<<<<<< HEAD
 # Friendship accepted!1!!
+=======
+# Friendship accepted!1!!
+>>>>>>> origin/main
