@@ -1,7 +1,4 @@
 #request
-vortex_msgs/OperationMode requested_operation_mode
-
-
 
 ---
 #response
