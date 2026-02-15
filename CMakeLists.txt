@@ -35,7 +35,11 @@ set(msg_files
   "msg/LineSegment3D.msg"
   "msg/LineSegment3DArray.msg"
   "msg/SonarInfo.msg"
+<<<<<<< Updated upstream
   "msg/OperationMode.msg"
+=======
+  "msg/SegDepthPacket.msg"
+>>>>>>> Stashed changes
 )
 
 set(srv_files
