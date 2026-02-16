@@ -23,6 +23,7 @@ set(msg_files
   "msg/HybridpathReference.msg"
   "msg/LOSGuidance.msg"
   "msg/GripperReferenceFilter.msg" 
+  "msg/GripperState.msg"
   "msg/ReferenceFilter.msg"
   "msg/DVLAltitude.msg"
   "msg/GripperWaypoint.msg"
