@@ -1,4 +1,4 @@
-uint16 subtype
+uint16 value
 
 # Landmark subtype:
 # For ARUCO_MARKER subtype id corresponds to subtype
