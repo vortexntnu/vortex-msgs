@@ -5,4 +5,3 @@ uint8 operation_mode
 uint8 AUTONOMOUS = 1
 uint8 MANUAL = 2
 uint8 REFERENCE = 3
-
