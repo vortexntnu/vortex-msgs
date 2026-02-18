@@ -2,8 +2,9 @@
 
 std_msgs/Header header
 
-LandmarkTypeClass type_class
 int32 id
+LandmarkType type
+LandmarkSubtype subtype
 
 geometry_msgs/PoseWithCovariance pose
 
