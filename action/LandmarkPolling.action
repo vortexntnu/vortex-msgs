@@ -1,5 +1,6 @@
 # Goal
-vortex_msgs/LandmarkTypeClass identifier
+vortex_msgs/LandmarkType type
+vortex_msgs/LandmarkSubtype subtype
 ---
 # Result
 vortex_msgs/LandmarkArray landmarks
