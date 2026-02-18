@@ -31,6 +31,7 @@ set(msg_files
   "msg/TransducerArray.msg"
   "msg/PoseEulerStamped.msg"
   "msg/Point2D.msg"
+  "msg/Point2DArray.msg"
   "msg/LineSegment2D.msg"
   "msg/LineSegment2DArray.msg"
   "msg/LineSegment3D.msg"
