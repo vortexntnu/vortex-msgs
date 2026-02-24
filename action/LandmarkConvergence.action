@@ -1,0 +1,10 @@
+# Goal
+int32 id
+geometry_msgs/Pose convergence_offset
+float64 convergence_threshold
+float64 dead_reckoning_offset
+---
+# Result
+vortex_msgs/Landmark landmark
+---
+# Feedback
