@@ -7,5 +7,7 @@ float64 dead_reckoning_offset
 float64 track_loss_timeout_sec
 ---
 # Result
+bool success
+vortex_msgs/Landmark landmark
 ---
 # Feedback
