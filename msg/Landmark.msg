@@ -7,5 +7,4 @@ LandmarkType type
 LandmarkSubtype subtype
 
 geometry_msgs/PoseWithCovariance pose
-
 # Constants
