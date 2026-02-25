@@ -19,6 +19,8 @@ set(msg_files
   "msg/LandmarkType.msg"
   "msg/LandmarkSubtype.msg"
   "msg/LandmarkArray.msg"
+  "msg/LandmarkTrack.msg"
+  "msg/LandmarkTrackArray.msg"
   "msg/OdometryArray.msg"
   "msg/Parameter.msg"
   "msg/ParameterArray.msg"
