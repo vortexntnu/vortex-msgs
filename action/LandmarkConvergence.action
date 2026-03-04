@@ -3,11 +3,12 @@ vortex_msgs/LandmarkType type
 vortex_msgs/LandmarkSubtype subtype
 geometry_msgs/Pose convergence_offset
 float64 convergence_threshold
-float64 dead_reckoning_offset
+float64 dead_reckoning_threshold
 float64 track_loss_timeout_sec
 ---
 # Result
 bool success
+bool landmark_valid
 vortex_msgs/Landmark landmark
 ---
 # Feedback
