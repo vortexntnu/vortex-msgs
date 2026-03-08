@@ -39,6 +39,7 @@ set(msg_files
   "msg/LineSegment3D.msg"
   "msg/LineSegment3DArray.msg"
   "msg/SonarInfo.msg"
+  "msg/NorbitSonarInfo.msg"
   "msg/OperationMode.msg"
 )
 
