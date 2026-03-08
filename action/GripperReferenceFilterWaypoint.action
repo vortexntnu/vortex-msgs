@@ -1,0 +1,9 @@
+# Goal
+vortex_msgs/GripperWaypoint waypoint
+float64 convergence_threshold
+
+# Result
+bool success
+
+# Feedback
+vortex_msgs/GripperReferenceFilter reference
