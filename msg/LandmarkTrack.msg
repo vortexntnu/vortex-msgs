@@ -2,4 +2,6 @@ std_msgs/Header header
 
 Landmark landmark
 
-float64 existence_probability
+bool confirmed
+int32 hits
+int32 misses
