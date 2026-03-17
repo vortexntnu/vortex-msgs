@@ -1,0 +1,8 @@
+# Goal
+vortex_msgs/LandmarkType type
+vortex_msgs/LandmarkSubtype subtype
+---
+# Result
+vortex_msgs/LandmarkArray landmarks
+---
+# Feedback

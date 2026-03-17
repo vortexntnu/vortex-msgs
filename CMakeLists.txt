@@ -16,7 +16,11 @@ set(msg_files
   "msg/Pwm.msg"
   "msg/KMBinary.msg"
   "msg/Landmark.msg"
+  "msg/LandmarkType.msg"
+  "msg/LandmarkSubtype.msg"
   "msg/LandmarkArray.msg"
+  "msg/LandmarkTrack.msg"
+  "msg/LandmarkTrackArray.msg"
   "msg/OdometryArray.msg"
   "msg/Parameter.msg"
   "msg/ParameterArray.msg"
@@ -33,11 +37,13 @@ set(msg_files
   "msg/TransducerArray.msg"
   "msg/PoseEulerStamped.msg"
   "msg/Point2D.msg"
+  "msg/Point2DArray.msg"
   "msg/LineSegment2D.msg"
   "msg/LineSegment2DArray.msg"
   "msg/LineSegment3D.msg"
   "msg/LineSegment3DArray.msg"
   "msg/SonarInfo.msg"
+  "msg/NorbitSonarInfo.msg"
   "msg/OperationMode.msg"
 )
 
@@ -47,6 +53,7 @@ set(srv_files
   "srv/SetOperationMode.srv"
   "srv/SetKillswitch.srv"
   "srv/ToggleKillswitch.srv"
+  "srv/GetOperationMode.srv"
 )
 
 set(action_files
@@ -62,6 +69,8 @@ set(action_files
   "action/FilteredPose.action"
   "action/HybridpathGuidance.action"
   "action/WaypointManager.action"
+  "action/LandmarkPolling.action"
+  "action/LandmarkConvergence.action"
 )
 
 # Generate ROS 2 message interfaces
