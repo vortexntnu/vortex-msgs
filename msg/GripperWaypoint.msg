@@ -1,5 +1,5 @@
-vortex_msg/GripperReferenceFilter roll
-vortex_msg/GripperReferenceFilter pinch
+GripperReferenceFilter roll
+GripperReferenceFilter pinch
 
 uint8 mode 
 
