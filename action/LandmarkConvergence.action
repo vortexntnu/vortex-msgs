@@ -7,11 +7,7 @@ float64 dead_reckoning_threshold
 float64 track_loss_timeout_sec
 
 # Convergence mode, controls which mode reference filter will use
-uint8 convergence_mode
-uint8 FULL_POSE = 0
-uint8 ONLY_POSITION = 1
-uint8 FORWARD_HEADING = 2
-uint8 ONLY_ORIENTATION = 3
+vortex_msgs/WaypointMode convergence_mode
 ---
 # Result
 bool success
