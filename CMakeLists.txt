@@ -29,6 +29,7 @@ set(msg_files
   "msg/ReferenceFilter.msg"
   "msg/ReferenceFilterQuat.msg"
   "msg/DVLAltitude.msg"
+  "msg/WaypointMode.msg"
   "msg/Waypoint.msg"
   "msg/Waypoints.msg"
   "msg/Transducer.msg"
