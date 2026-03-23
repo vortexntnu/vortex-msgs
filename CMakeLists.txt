@@ -53,6 +53,7 @@ set(srv_files
   "srv/SetOperationMode.srv"
   "srv/SetKillswitch.srv"
   "srv/ToggleKillswitch.srv"
+  "srv/SetLosMode.srv"
   "srv/GetOperationMode.srv"
 )
 
