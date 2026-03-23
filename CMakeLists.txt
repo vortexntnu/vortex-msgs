@@ -44,6 +44,7 @@ set(msg_files
   "msg/SonarInfo.msg"
   "msg/NorbitSonarInfo.msg"
   "msg/OperationMode.msg"
+  "msg/Vector3Array.msg"
 )
 
 set(srv_files
