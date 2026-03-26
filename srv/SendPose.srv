@@ -1,0 +1,5 @@
+#request
+PoseStamped pose
+---
+#response
+bool success
