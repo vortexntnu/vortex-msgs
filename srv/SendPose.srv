@@ -1,5 +1,5 @@
 #request
-PoseStamped pose
+geometry_msgs/PoseStamped pose
 ---
 #response
 bool success
