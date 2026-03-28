@@ -56,6 +56,7 @@ set(srv_files
   "srv/ToggleKillswitch.srv"
   "srv/SetLosMode.srv"
   "srv/GetOperationMode.srv"
+  "srv/SendPose.srv"
 )
 
 set(action_files
