@@ -28,6 +28,7 @@ set(msg_files
   "msg/LOSGuidance.msg"
   "msg/ReferenceFilter.msg"
   "msg/ReferenceFilterQuat.msg"
+  "msg/RPY.msg"
   "msg/DVLAltitude.msg"
   "msg/WaypointMode.msg"
   "msg/Waypoint.msg"
