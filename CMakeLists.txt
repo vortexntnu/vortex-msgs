@@ -46,6 +46,7 @@ set(msg_files
   "msg/OperationMode.msg"
   "msg/Vector3Array.msg"
   "msg/BearingMeasurement.msg"
+  "msg/BearingMeasurementArray.msg"
 )
 
 set(srv_files
