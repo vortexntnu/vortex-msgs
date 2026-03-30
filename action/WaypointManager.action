@@ -9,5 +9,4 @@ bool pose_valid
 bool success
 ---
 # Feedback
-geometry_msgs/Pose current_pose
 vortex_msgs/Waypoint current_waypoint

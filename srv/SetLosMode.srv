@@ -1,0 +1,10 @@
+# request
+uint8 PROPORTIONAL=0
+uint8 INTEGRAL=1
+uint8 ADAPTIVE=2
+uint8 VECTORFIELD=3
+
+uint8 mode
+---
+# response
+bool success

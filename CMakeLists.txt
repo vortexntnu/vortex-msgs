@@ -29,8 +29,11 @@ set(msg_files
   "msg/GripperReferenceFilter.msg" 
   "msg/GripperState.msg"
   "msg/ReferenceFilter.msg"
+  "msg/ReferenceFilterQuat.msg"
+  "msg/RPY.msg"
   "msg/DVLAltitude.msg"
   "msg/GripperWaypoint.msg"
+  "msg/WaypointMode.msg"
   "msg/Waypoint.msg"
   "msg/Waypoints.msg"
   "msg/Transducer.msg"
@@ -45,6 +48,9 @@ set(msg_files
   "msg/SonarInfo.msg"
   "msg/NorbitSonarInfo.msg"
   "msg/OperationMode.msg"
+  "msg/Vector3Array.msg"
+  "msg/BearingMeasurement.msg"
+  "msg/BearingMeasurementArray.msg"
 )
 
 set(srv_files
@@ -53,7 +59,9 @@ set(srv_files
   "srv/SetOperationMode.srv"
   "srv/SetKillswitch.srv"
   "srv/ToggleKillswitch.srv"
+  "srv/SetLosMode.srv"
   "srv/GetOperationMode.srv"
+  "srv/SendPose.srv"
 )
 
 set(action_files
@@ -64,6 +72,7 @@ set(action_files
   "action/NavigateWaypoints.action"
   "action/ReferenceFilterWaypoint.action"
   "action/GripperReferenceFilterWaypoint.action"
+  "action/ReferenceFilterQuatWaypoint.action"
   "action/VtfGuidance.action"
   "action/LOSGuidance.action"
   "action/FilteredPose.action"
