@@ -27,13 +27,17 @@ set(msg_files
   "msg/HybridpathReference.msg"
   "msg/LOSGuidance.msg"
   "msg/ReferenceFilter.msg"
+  "msg/ReferenceFilterQuat.msg"
+  "msg/RPY.msg"
   "msg/DVLAltitude.msg"
+  "msg/WaypointMode.msg"
   "msg/Waypoint.msg"
   "msg/Waypoints.msg"
   "msg/Transducer.msg"
   "msg/TransducerArray.msg"
   "msg/PoseEulerStamped.msg"
   "msg/Point2D.msg"
+  "msg/Point2DArray.msg"
   "msg/LineSegment2D.msg"
   "msg/LineSegment2DArray.msg"
   "msg/LineSegment3D.msg"
@@ -41,6 +45,9 @@ set(msg_files
   "msg/SonarInfo.msg"
   "msg/NorbitSonarInfo.msg"
   "msg/OperationMode.msg"
+  "msg/Vector3Array.msg"
+  "msg/BearingMeasurement.msg"
+  "msg/BearingMeasurementArray.msg"
 )
 
 set(srv_files
@@ -49,7 +56,9 @@ set(srv_files
   "srv/SetOperationMode.srv"
   "srv/SetKillswitch.srv"
   "srv/ToggleKillswitch.srv"
+  "srv/SetLosMode.srv"
   "srv/GetOperationMode.srv"
+  "srv/SendPose.srv"
 )
 
 set(action_files
@@ -59,6 +68,7 @@ set(action_files
   "action/LocateDock.action"
   "action/NavigateWaypoints.action"
   "action/ReferenceFilterWaypoint.action"
+  "action/ReferenceFilterQuatWaypoint.action"
   "action/VtfGuidance.action"
   "action/LOSGuidance.action"
   "action/FilteredPose.action"

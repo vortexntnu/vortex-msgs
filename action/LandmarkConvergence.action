@@ -5,6 +5,9 @@ geometry_msgs/Pose convergence_offset
 float64 convergence_threshold
 float64 dead_reckoning_threshold
 float64 track_loss_timeout_sec
+
+# Convergence mode, controls which mode reference filter will use
+vortex_msgs/WaypointMode convergence_mode
 ---
 # Result
 bool success
