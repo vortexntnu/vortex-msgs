@@ -68,7 +68,7 @@ set(action_files
   "action/LocateDock.action"
   "action/NavigateWaypoints.action"
   "action/VtfGuidance.action"
-  "action/SetWaypoint.action"
+  "action/GuidanceWaypoint.action"
   "action/FilteredPose.action"
   "action/HybridpathGuidance.action"
   "action/WaypointManager.action"
