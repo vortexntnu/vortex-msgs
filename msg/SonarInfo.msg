@@ -5,4 +5,5 @@ float64 meters_per_pixel_x
 float64 meters_per_pixel_y
 float64 max_range
 float64 min_range
+float64 horizontal_fov
 float64 vertical_fov
