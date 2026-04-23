@@ -28,6 +28,7 @@ set(msg_files
   "msg/LOSGuidance.msg"
   "msg/GripperReferenceFilter.msg" 
   "msg/GripperState.msg"
+  "msg/GripperStateVelocityCommand.msg"
   "msg/ReferenceFilter.msg"
   "msg/ReferenceFilterQuat.msg"
   "msg/RPY.msg"
