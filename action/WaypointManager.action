@@ -4,8 +4,6 @@ float64 convergence_threshold
 bool persistent # Action is not terminated when waypoints are reached. Can only be stopped through cancellation from client.
 ---
 # Result
-geometry_msgs/Pose final_pose
-bool pose_valid
 bool success
 ---
 # Feedback

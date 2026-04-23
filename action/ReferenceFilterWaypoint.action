@@ -1,8 +1,0 @@
-# Goal
-vortex_msgs/Waypoint waypoint
-float64 convergence_threshold
----
-# Result
-bool success
----
-# Feedback
