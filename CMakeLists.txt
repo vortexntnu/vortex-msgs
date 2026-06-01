@@ -36,6 +36,7 @@ set(msg_files
   "msg/GripperWaypoint.msg"
   "msg/WaypointMode.msg"
   "msg/Waypoint.msg"
+  "msg/WaypointDebug.msg"
   "msg/Waypoints.msg"
   "msg/Transducer.msg"
   "msg/TransducerArray.msg"
