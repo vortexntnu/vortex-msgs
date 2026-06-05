@@ -1,0 +1,15 @@
+# Collect direction measurements for timeout_sec seconds, average them
+# (with outlier rejection), and return a projected waypoint pose.
+# The FSM projects: pose.position = drone_pos + avg_dir * distance.
+
+# Goal
+float64 timeout_sec
+float64 distance 10.0    # metres to project the waypoint along avg_direction
+---
+# Result
+bool success
+geometry_msgs/Pose pose  # Projected waypoint pose in odom frame
+---
+# Feedback
+int32 measurements_collected
+float64 time_remaining_sec

@@ -80,6 +80,7 @@ set(action_files
   "action/WaypointManager.action"
   "action/LandmarkPolling.action"
   "action/LandmarkConvergence.action"
+  "action/CollectBearingDirection.action"
 )
 
 # Generate ROS 2 message interfaces
