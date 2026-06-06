@@ -26,6 +26,7 @@ set(msg_files
   "msg/ParameterArray.msg"
   "msg/HybridpathReference.msg"
   "msg/LOSGuidance.msg"
+  "msg/LOSWaypoint.msg"
   "msg/GripperReferenceFilter.msg" 
   "msg/GripperState.msg"
   "msg/GripperStateVelocityCommand.msg"
@@ -80,6 +81,7 @@ set(action_files
   "action/WaypointManager.action"
   "action/LandmarkPolling.action"
   "action/LandmarkConvergence.action"
+  "action/LOSWaypoint.action"
 )
 
 # Generate ROS 2 message interfaces
