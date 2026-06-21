@@ -1,0 +1,16 @@
+# Goal
+float64 roll_velocity
+float64 pinch_velocity
+float64 duration_seconds
+uint8 mode
+
+# Mode constraints (mirrors GripperWaypoint mode constants)
+uint8 ROLL_AND_PINCH = 0
+uint8 ONLY_ROLL = 1
+uint8 ONLY_PINCH = 2
+---
+# Result
+bool success
+---
+# Feedback
+float64 elapsed_seconds
