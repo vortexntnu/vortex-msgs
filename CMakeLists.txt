@@ -82,7 +82,6 @@ set(action_files
   "action/HybridpathGuidance.action"
   "action/WaypointManager.action"
   "action/LandmarkPolling.action"
-  "action/LandmarkConvergence.action"
   "action/CollectBearingDirection.action"
 )
 
