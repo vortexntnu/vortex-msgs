@@ -4,6 +4,7 @@ project(vortex_msgs)
 # Find ROS 2 packages
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
@@ -21,12 +22,13 @@ set(msg_files
   "msg/LandmarkArray.msg"
   "msg/LandmarkTrack.msg"
   "msg/LandmarkTrackArray.msg"
+  "msg/CourseFrameState.msg"
   "msg/OdometryArray.msg"
   "msg/Parameter.msg"
   "msg/ParameterArray.msg"
   "msg/HybridpathReference.msg"
   "msg/LOSGuidance.msg"
-  "msg/GripperReferenceFilter.msg" 
+  "msg/GripperReferenceFilter.msg"
   "msg/GripperState.msg"
   "msg/GripperStateVelocityCommand.msg"
   "msg/ReferenceFilter.msg"
@@ -64,6 +66,7 @@ set(srv_files
   "srv/SetLosMode.srv"
   "srv/GetOperationMode.srv"
   "srv/SendPose.srv"
+  "srv/SetCourseFrame.srv"
 )
 
 set(action_files
@@ -89,6 +92,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     ${srv_files}
     ${action_files}
     DEPENDENCIES std_msgs
+      builtin_interfaces
       geometry_msgs
       nav_msgs
       shape_msgs
@@ -98,6 +102,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 # Declare package dependencies
 ament_export_dependencies(
   rosidl_default_runtime
+  builtin_interfaces
   geometry_msgs
   std_msgs
   nav_msgs

@@ -1,0 +1,8 @@
+# Request
+geometry_msgs/Pose start_pose       # vehicle pose in odom at start
+float64 heading_offset_rad 0.0      # course direction relative to the vehicle: 0, +-pi/2 or pi (coin flip)
+---
+# Response
+bool success                        # false on NaN in the pose or illegal heading_offset_rad
+string message
+vortex_msgs/CourseFrameState state  # state after the call

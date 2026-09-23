@@ -2,9 +2,22 @@
 vortex_msgs/Waypoint[] waypoints
 float64 convergence_threshold
 bool persistent # Action is not terminated when waypoints are reached. Can only be stopped through cancellation from client.
+uint8 WORLD=0
+uint8 BODY_RELATIVE=1 # Offset in the vehicle frame at goal start.
+uint8 WORLD_RELATIVE=2 # Offset along odom axes from the pose at goal start.
+uint8 frame 0
 ---
 # Result
 bool success
+uint8 SUCCEEDED=0
+uint8 PREEMPTED=1
+uint8 CANCELED=2
+uint8 INVALID_GOAL=3
+uint8 REFERENCE_FILTER_ABORTED=4
+uint8 outcome
+string message
+int32 reached_index
 ---
 # Feedback
 vortex_msgs/Waypoint current_waypoint
+int32 current_index
