@@ -32,6 +32,10 @@ uint16 BIN_SEARCH_RESCUE = 1
 uint16 BIN_SURVEY_REPAIR = 2
 # For GATE, the whole gate (used before the role images are told apart)
 uint16 GATE_WHOLE = 3
+# For GATE, the vertical posts: the two outer uprights and the short post
+# hanging from the top bar between the two openings
+uint16 GATE_POLE_EDGE = 4
+uint16 GATE_POLE_MIDDLE = 5
 # For TORPEDO_BOARD, icons seen by the front camera. TORPEDO_TARGET_* (2-5)
 # are derived in the map from these.
 uint16 TORPEDO_ICON_FIRE = 6
