@@ -23,6 +23,9 @@ set(msg_files
   "msg/LandmarkTrack.msg"
   "msg/LandmarkTrackArray.msg"
   "msg/CourseFrameState.msg"
+  "msg/CourseSlot.msg"
+  "msg/CourseTask.msg"
+  "msg/CourseState.msg"
   "msg/OdometryArray.msg"
   "msg/Parameter.msg"
   "msg/ParameterArray.msg"
@@ -67,6 +70,7 @@ set(srv_files
   "srv/GetOperationMode.srv"
   "srv/SendPose.srv"
   "srv/SetCourseFrame.srv"
+  "srv/SetMapFocus.srv"
 )
 
 set(action_files

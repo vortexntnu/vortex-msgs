@@ -1,0 +1,8 @@
+# Tell landmark_server which tasks the mission works on now.
+string[] tasks                      # task names; empty = all tasks (search)
+bool lock_others false              # tasks outside the list are frozen
+string[] commit                     # freeze these tasks' pose and variant
+string[] uncommit                   # release them again
+---
+bool success                        # false on an unknown task name
+string message
