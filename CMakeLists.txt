@@ -26,6 +26,7 @@ set(msg_files
   "msg/ParameterArray.msg"
   "msg/HybridpathReference.msg"
   "msg/LOSGuidance.msg"
+  "msg/LOSWaypoint.msg"
   "msg/GripperReferenceFilter.msg" 
   "msg/GripperState.msg"
   "msg/GripperStateVelocityCommand.msg"
