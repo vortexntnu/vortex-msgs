@@ -1,0 +1,15 @@
+# A course layout of landmark_server: one per pool or competition course.
+string layout                       # "" = the layout in use
+---
+bool success                        # false on an unknown or unreadable layout
+string message
+string layout                       # the layout returned
+string active_layout                # the layout landmark_server uses now
+string[] layouts                    # every layout it can load
+bool enable                         # course model on
+float64 start_x                     # where the vehicle starts, course frame [m]
+float64 start_y
+vortex_msgs/CoursePrior[] tasks
+vortex_msgs/CourseTemplate[] templates
+string gui_state                    # stored with the last SetCourse, returned unchanged
+string file                         # the layout's file

@@ -26,6 +26,8 @@ set(msg_files
   "msg/CourseSlot.msg"
   "msg/CourseTask.msg"
   "msg/CourseState.msg"
+  "msg/CoursePrior.msg"
+  "msg/CourseTemplate.msg"
   "msg/OdometryArray.msg"
   "msg/Parameter.msg"
   "msg/ParameterArray.msg"
@@ -71,6 +73,8 @@ set(srv_files
   "srv/SendPose.srv"
   "srv/SetCourseFrame.srv"
   "srv/SetMapFocus.srv"
+  "srv/GetCourse.srv"
+  "srv/SetCourse.srv"
 )
 
 set(action_files

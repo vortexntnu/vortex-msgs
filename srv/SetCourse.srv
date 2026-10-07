@@ -1,0 +1,17 @@
+# Replace landmark_server's course layout. All or nothing: a request that does
+# not parse changes nothing. Tasks already placed keep their fitted pose; the
+# others take the new prior. A change of the task list, a template or enable
+# clears the map.
+string layout                       # "" = the layout in use; another one becomes the layout in use
+bool enable                         # course model on
+float64 start_x                     # where the vehicle starts, course frame [m]
+float64 start_y
+vortex_msgs/CoursePrior[] tasks
+string gui_state                    # stored and returned by GetCourse
+bool save                           # write the layout's file; the old one goes to backup/
+---
+bool success
+string message                      # the reason when refused
+string[] applied                    # tasks whose new prior is used from the next tick
+string[] kept                       # tasks already placed: the prior is stored, the pose kept
+bool map_cleared                    # the task list, a template or enable changed
