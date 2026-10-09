@@ -1,0 +1,7 @@
+# Replace the prior map. The poses are in reference_frame (empty = the
+# server's map frame).
+string reference_frame
+vortex_msgs/ObjectPose[] objects
+---
+bool success
+string message

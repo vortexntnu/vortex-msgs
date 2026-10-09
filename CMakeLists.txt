@@ -60,6 +60,7 @@ set(msg_files
   "msg/Vector3Array.msg"
   "msg/BearingMeasurement.msg"
   "msg/BearingMeasurementArray.msg"
+  "msg/ObjectPose.msg"
 )
 
 set(srv_files
@@ -75,6 +76,7 @@ set(srv_files
   "srv/SetMapFocus.srv"
   "srv/GetCourse.srv"
   "srv/SetCourse.srv"
+  "srv/SetPremap.srv"
 )
 
 set(action_files
