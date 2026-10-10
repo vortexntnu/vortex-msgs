@@ -33,6 +33,7 @@ set(msg_files
   "msg/ParameterArray.msg"
   "msg/HybridpathReference.msg"
   "msg/LOSGuidance.msg"
+  "msg/LOSWaypoint.msg"
   "msg/GripperReferenceFilter.msg"
   "msg/GripperState.msg"
   "msg/GripperStateVelocityCommand.msg"
@@ -92,6 +93,7 @@ set(action_files
   "action/HybridpathGuidance.action"
   "action/WaypointManager.action"
   "action/LandmarkPolling.action"
+  "action/LOSWaypoint.action"
   "action/CollectBearingDirection.action"
 )
 

@@ -1,0 +1,8 @@
+# Goal
+vortex_msgs/LOSWaypoint los_waypoint
+float64 convergence_threshold
+---
+# Result
+bool success
+---
+# Feedback
