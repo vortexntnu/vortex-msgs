@@ -25,11 +25,6 @@ uint16 TORPEDO_TARGET_SMALL_SURVEY_REPAIR = 5
 # For BIN: the role image inside the bin
 uint16 BIN_SEARCH_RESCUE = 1
 uint16 BIN_SURVEY_REPAIR = 2
-# For GATE: the whole gate
-uint16 GATE_WHOLE = 3
-# For GATE: the outer posts and the short post between the openings
-uint16 GATE_POLE_EDGE = 4
-uint16 GATE_POLE_MIDDLE = 5
 # For TORPEDO_BOARD: the role icons
 uint16 TORPEDO_ICON_FIRE = 6
 uint16 TORPEDO_ICON_BLOOD = 7
