@@ -1,6 +1,7 @@
 vortex_msgs/PoseEulerStamped pose
 string mode
-float64 convergence_threshold 0.1
+float64 position_tolerance
+float64 orientation_tolerance
 bool keep_altitude false
 float64 desired_altitude 0.0
 bool require_altitude_convergence false
