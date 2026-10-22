@@ -16,20 +16,16 @@ uint16 GATE_SURVEY_REPAIR = 2
 # For SLALOM_PIPE
 uint16 SLALOM_PIPE_WHITE = 1
 uint16 SLALOM_PIPE_RED = 2
-# For TORPEDO_BOARD: the board and its openings by size and role
+# For TORPEDO_BOARD: the board, and the centre of each red circle (the openings to shoot through)
+# by size and place, as seen from in front of the board
 uint16 TORPEDO_BOARD_WHOLE = 1
-uint16 TORPEDO_TARGET_LARGE_SEARCH_RESCUE = 2
-uint16 TORPEDO_TARGET_LARGE_SURVEY_REPAIR = 3
-uint16 TORPEDO_TARGET_SMALL_SEARCH_RESCUE = 4
-uint16 TORPEDO_TARGET_SMALL_SURVEY_REPAIR = 5
+uint16 TORPEDO_OPENING_LARGE_LEFT = 2
+uint16 TORPEDO_OPENING_LARGE_RIGHT = 3
+uint16 TORPEDO_OPENING_SMALL_TOP = 4
+uint16 TORPEDO_OPENING_SMALL_BOTTOM = 5
 # For BIN: the role image inside the bin
 uint16 BIN_SEARCH_RESCUE = 1
 uint16 BIN_SURVEY_REPAIR = 2
-# For TORPEDO_BOARD: the role icons
-uint16 TORPEDO_ICON_FIRE = 6
-uint16 TORPEDO_ICON_BLOOD = 7
-uint16 TORPEDO_ICON_FIRETRUCK = 8
-uint16 TORPEDO_ICON_AMBULANCE = 9
 # For BIN: a bin without a known role, and the rig
 uint16 BIN_UNCLASSIFIED = 3
 uint16 BIN_STRUCTURE = 4
