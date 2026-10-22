@@ -13,6 +13,8 @@ find_package(sensor_msgs REQUIRED)
 set(msg_files
   "msg/Clusters.msg"
   "msg/ThrusterForces.msg"
+  "msg/ThrusterStatus.msg"
+  "msg/ThrusterStatusArray.msg"
   "msg/Pwm.msg"
   "msg/KMBinary.msg"
   "msg/Landmark.msg"
