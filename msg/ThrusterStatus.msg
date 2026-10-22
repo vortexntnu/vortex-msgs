@@ -11,4 +11,4 @@ float32 target_erpm
 float32 measured_erpm
 
 # Measured current in amperes.
-float32 current_a
+float32 current_amp
